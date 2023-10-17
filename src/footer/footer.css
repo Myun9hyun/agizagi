@@ -1,0 +1,61 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* text-align: center; */
+  }
+  
+  .wrapper {
+    position: relative;
+    padding-bottom: 40px;
+    box-sizing: border-box; /* 패딩을 전체 높이에 포함 */
+  }
+  
+  
+  .footer-container {
+    width: 100%;
+    height: 35px;
+    background-image: linear-gradient(to right top, #cffff9 0%, #ccdbfb 60%);
+    position: fixed;
+    bottom : 0;
+    left: 0;
+    align-items: center;
+    z-index: 90; 
+  }
+  
+  .footer-section1 {
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 14px;
+  }
+  
+  .button-link {
+    display: inline-block;
+    background-color: transparent;
+    color: rgb(101, 116, 167);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .footer-container {
+        height: 30px; /* 모바일 환경에서 높이를 더 크게 설정 */
+        bottom: 0; /* 화면 하단에 위치 */
+        position: fixed; /* 화면 하단에 고정 */
+        font-size: 6px;
+    }
+    
+    .footer-section1 {
+        margin-bottom: 10px; /* 모바일 환경에서 여백을 더 크게 설정 */
+        font-size: 11px; /* 모바일 환경에서 글꼴 크기를 조정 */
+
+    }
+    
+    .button-link {
+        font-size: 12px; /* 모바일 환경에서 글꼴 크기를 조정 */
+    }
+}

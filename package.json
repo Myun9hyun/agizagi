@@ -1,6 +1,6 @@
 {
   "name": "react_tutorial",
-  "proxy": "http://localhost:8080,https://petite-wolves-say.loca.lt/,http://52.79.116.191/",
+  "proxy": "http://localhost:8080,http://43.201.175.42:8080/,http://52.79.116.191/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +21,7 @@
     "react-autosuggest": "^10.1.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0",
+    "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4",
     "wow.js": "^1.2.2"

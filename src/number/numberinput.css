@@ -6,15 +6,53 @@ html {
     padding:0;
     font-family: sans-serif;
   } */
+  /* numberinput.css */
+
+
+.nickname-box {
+    position: relative;
+  }
+  
+  .nickname-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #0f0f0f;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #030303;
+    outline: none;
+    background: transparent;
+  }
+  
+  .nickname-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #010101;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .nickname-box input:focus ~ label,
+  .nickname-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #100b6b;
+    font-size: 12px;
+  }
+  
   
   .login-box {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     width: 400px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: #d8f9f1;
+    background-image: linear-gradient(to right top, #cffff9 0%, #ccdbfb 60%);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
@@ -42,6 +80,7 @@ html {
     outline: none;
     background: transparent;
   }
+
   .login-box .user-box label {
     position: absolute;
     top:0;
@@ -57,7 +96,7 @@ html {
   .login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
-    color: #016d72;
+    color: #100b6b;
     font-size: 12px;
   }
   
@@ -76,13 +115,14 @@ html {
   }
   
   .login-box a:hover {
-    background: #03a1aa;
+    background: #21acd6;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #03a1aa,
-                0 0 25px #03a1aa,
-                0 0 50px #03a1aa,
-                0 0 100px #03a1aa;
+    box-shadow: 
+    0 0 5px #21acd6,
+                0 0 15px #21acd6,
+                0 0 25px #21acd6,
+                0 0 35px #21acd6;
   }
   
   .login-box a span {
@@ -164,4 +204,41 @@ html {
       bottom: 100%;
     }
   }
-  
+  @media (max-width: 768px) {
+    .nickname-box {
+        position: relative;
+      }
+      
+      .nickname-box input {
+        width: 75%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #0f0f0f;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #030303;
+        outline: none;
+        background: transparent;
+      }
+      
+      .nickname-box label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #010101;
+        pointer-events: none;
+        transition: .5s;
+      }
+      
+      .nickname-box input:focus ~ label,
+      .nickname-box input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #100b6b;
+        font-size: 12px;
+      }
+      
+      
+  }

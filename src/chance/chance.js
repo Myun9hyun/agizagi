@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import './chance.css';
 
@@ -15,9 +15,7 @@ function NumberInput() {
     setChance(e.target.value);
   };
 
-  const handleNumberChange = (e) => {
-    setNumber(e.target.value);
-  };
+
 
   const saveChance = () => {
     const data = {
@@ -27,7 +25,7 @@ function NumberInput() {
     };
 
     axios
-      .post('http://localhost:8080/api/chances/save', data)
+      .post('http://43.201.175.42:8080/api/chances/save', data)
       .then((response) => {
         console.log('Chance saved:', response.data);
         alert('기회가 저장되었습니다!');
@@ -48,11 +46,11 @@ function NumberInput() {
         <div className="user-box">
           <input
             type="text"
-            placeholder="Nickname"
+            placeholder="닉네임 입력하기"
             value={nickname}
             onChange={handleNicknameChange}
           />
-          <label>Nickname</label>
+          <label>닉네임</label>
         </div>
         <div className="user-box">
           <input

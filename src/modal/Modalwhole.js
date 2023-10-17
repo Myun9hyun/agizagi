@@ -10,9 +10,9 @@ function Modalwhole() {
   const getAllNumbers = async () => {
     try {
       // 데이터를 조회하고 data 상태에 저장
-      const response = await axios.get('http://localhost:8080/api/numbers/list');
+      const response = await axios.get('http://43.201.175.42:8080/api/numbers/list');
       setData(response.data);
-      
+
       // 모달 열기
       setIsModalOpen(true);
     } catch (error) {
@@ -20,10 +20,10 @@ function Modalwhole() {
     }
   };
 
-  useEffect(() => {
-    // 페이지가 로드될 때 자동으로 데이터 조회
-    getAllNumbers();
-  }, []);
+  // 이미지 클릭 이벤트 핸들러
+  const handleImageClick = () => {
+    getAllNumbers(); // 이미지 클릭 시 데이터 받아오기
+  };
 
   const closeModal = () => {
     setIsModalOpen(false);
@@ -41,10 +41,13 @@ function Modalwhole() {
     <div className='modal-page'>
       <div className="page">
         <div className="page__container">
-          {/* 모달 버튼 클릭 시 전체 데이터 조회 함수 호출 */}
-          <a href="#whole-data" className="open-popup" onClick={getAllNumbers}>
-            전체 데이터 보기
-          </a>
+          {/* 이미지 클릭 시 모달 열기 */}
+          <img
+            src="https://i.imgur.com/sA0Bg5A.png"
+            alt="전체 데이터 보기"
+            className="open-popup"
+            onClick={handleImageClick} // 이미지 클릭 이벤트 핸들러 연결
+          />
         </div>
       </div>
       {isModalOpen && (
@@ -78,7 +81,6 @@ function Modalwhole() {
                 </tbody>
               </table>
             </div>
-          
           </div>
         </div>
       )}

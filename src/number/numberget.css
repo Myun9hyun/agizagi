@@ -1,0 +1,382 @@
+/* Custom Image 1 스타일 */
+.custom-image-1 {
+    width: 4%;
+    height: auto;
+    position: absolute;
+    top: 68%;
+    left: 75%;
+    margin: 0 auto;
+    cursor: pointer;
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    z-index: 5;
+}
+.image-style-1 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.image-overlay {
+    position: absolute; /* 이미지 컨테이너 내부 요소의 위치를 조정하기 위해 절대 위치 지정 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.image-group-2 {
+    position: absolute; /* 이미지 컨테이너 내부 요소의 위치를 조정하기 위해 절대 위치 지정 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.image-description-data {
+    color: rgb(149, 154, 7);
+    font-size: 1.5vw;
+    background-color: black;
+    position: absolute;
+    top: 91%; /* 이미지 하단 바로 위에 위치 */
+    left: 70%; /* 이미지 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+    z-index: 6;
+}
+.image-description-whole {
+    color: rgb(149, 154, 7);
+    font-size: 1.5vw;
+    background-color: black;
+    position: absolute;
+    top: 91%; /* 이미지 하단 바로 위에 위치 */
+    left: 30%; /* 이미지 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+    z-index: 6;
+}
+.image-description-b {
+    color: rgb(149, 154, 7);
+    font-size: 1.5vw;
+    background-color: black;
+    position: absolute;
+    top: 87%; /* 이미지 하단 바로 위에 위치 */
+    left: 70%; /* 이미지 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+    z-index: 6;
+}
+.image-description-y {
+    color: rgb(149, 154, 7);
+    font-size: 1.5vw;
+    background-color: black;
+    position: absolute;
+    top: 87%; /* 이미지 하단 바로 위에 위치 */
+    left: 30%; /* 이미지 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+    z-index: 6;
+}
+.image-description-c {
+    color: rgb(149, 154, 7);
+    font-size: 20px;
+    background-color: black;
+    position: absolute;
+    top: 87%; /* 이미지 하단 바로 위에 위치 */
+    left: 70%; /* 이미지 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+}
+/* Custom Image 2 스타일 */
+.custom-image-2 {
+    width: 4%;
+    height: auto;
+    position: absolute;
+    top: 68%;
+    left: 35%;
+    z-index: 2;
+    margin: 0 auto;
+
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+
+    cursor: pointer;
+}
+
+.custom-image-3 {
+    width: 13%;
+    height: auto;
+    position: absolute;
+    top: 81%;
+    left: 70%;
+    cursor: pointer;
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+
+    z-index: 5;
+}
+
+.custom-image-4 {
+    width: 6%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 81%;
+    left: 30%;
+    cursor: pointer;
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    z-index: 5;
+}
+.overlapping-image-yn {
+    width: 11%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 91%; /* 기존 이미지의 높이의 50% 위치에 고정 */
+    left: 70%; /* 왼쪽에서 70% 위치에 고정 */
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    z-index: 6;
+}
+.overlapping-image-bd {
+    width: 11%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 94%; /* 기존 이미지의 높이의 50% 위치에 고정 */
+    left: 30%; /* 왼쪽에서 70% 위치에 고정 */
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    z-index: 6;
+}
+.overlapping-image-bn {
+    width: 11%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 91%; /* 기존 이미지의 높이의 50% 위치에 고정 */
+    left: 30%; /* 왼쪽에서 70% 위치에 고정 */
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    z-index: 6;
+}
+.overlapping-image-yw {
+    width: 11%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 94%; /* 기존 이미지의 높이의 50% 위치에 고정 */
+    left: 70%; /* 왼쪽에서 70% 위치에 고정 */
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    z-index: 6;
+}
+/* 이미지 설명 텍스트 스타일링 */
+.image-description {
+    color: rgb(149, 154, 7);
+    font-size: 16px;
+    background-color: black;
+    position: absolute;
+    top: calc(100% + 10px); /* 이미지 하단 바로 위에 위치 */
+    left: 50%; /* 이미지 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+}
+
+/* 커스텀 이미지 설명 스타일 */
+.custom-description-1 {
+    position: absolute;
+    top: calc(100% + 150px); /* 이미지 하단 바로 위에 위치 */
+    left: 67%; /* 이미지 중앙에 위치 */
+    font-size: 20px;
+}
+.custom-description-3 {
+    position: absolute;
+    top: calc(100% + 175px); /* 이미지 하단 바로 위에 위치 */
+    left: 67%; /* 이미지 중앙에 위치 */
+}
+
+.custom-description-2 {
+    position: absolute;
+    top: calc(100% + 152px); /* 이미지 하단 바로 위에 위치 */
+    left: 37%; /* 이미지 중앙에 위치 */
+    font-size: 20px;
+
+}
+.custom-description-4 {
+    position: absolute;
+    top: calc(100% + 177px); /* 이미지 하단 바로 위에 위치 */
+    left: 37%; /* 이미지 중앙에 위치 */
+}
+.image-container {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    /* 화면 크기가 768px 이하인 경우의 스타일 */
+    /* Custom Image 1 스타일 */
+    .custom-image-1 {
+        width: auto;
+        height: auto;
+        position: absolute;
+        margin: 0 auto;
+        top: 50%;
+        left: 77%;
+        cursor: pointer;
+        z-index: 5;
+        transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    }
+
+  
+    /* Custom Image 2 스타일 */
+    .custom-image-2 {
+        width: auto;
+        height: auto;
+        position: absolute;
+        margin: 0 auto;
+        top: 50%;
+        left: 35%;
+        z-index: 5;
+        cursor: pointer;
+        transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    }
+
+    .custom-image-3 {
+        width: 20%;
+        height: auto;
+        position: absolute;
+        margin: 0 auto;
+        top: 75%;
+        left: 70%;
+        z-index: 4;
+        cursor: pointer;
+        transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    }
+  
+    .custom-image-4 {
+        width: 9.2%;
+        height: auto;
+        position: absolute;
+        margin: 0 auto;
+        top: 75%;
+        left: 30%;
+        z-index: 4;
+        cursor: pointer;
+        transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    }
+  
+    /* 이미지 설명 텍스트 스타일링 */
+.image-description {
+    color: rgb(149, 154, 7);
+    font-size: 12px;
+    background-color: black;
+    position: absolute;
+    top: calc(100% + 10px); /* 이미지 하단 바로 위에 위치 */
+    left: 50%; /* 이미지 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+}
+.image-description-b {
+    color: rgb(149, 154, 7);
+    font-size: 12px;
+    background-color: black;
+    position: absolute;
+    top: 85%; /* 이미지 하단 바로 위에 위치 */
+    left: 70%; /* 이미지 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+    z-index: 6;
+}
+.image-description-y {
+    color: rgb(149, 154, 7);
+    font-size: 12px;
+    background-color: black;
+    position: absolute;
+    top: 85%; /* 이미지 하단 바로 위에 위치 */
+    left: 30%; /* 이미지 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+    z-index: 6;
+}
+.image-description-data {
+    color: rgb(149, 154, 7);
+    font-size: 12px;
+    background-color: black;
+    position: absolute;
+    top: 90%; /* 이미지 하단 바로 위에 위치 */
+    left: 70%; /* 이미지 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+    z-index: 6;
+}
+.image-description-whole {
+    color: rgb(149, 154, 7);
+    font-size: 12px;
+    background-color: black;
+    position: absolute;
+    top: 90%; /* 이미지 하단 바로 위에 위치 */
+    left: 30%; /* 이미지 중앙에 위치 */
+    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+    z-index: 6;
+}
+/* 커스텀 이미지 설명 스타일 */
+.custom-description-1 {
+    position: absolute;
+    top: calc(100% + 150px); /* 이미지 하단 바로 위에 위치 */
+    left: 75%; /* 이미지 중앙에 위치 */
+    font-size: 20px;
+}
+.custom-description-3 {
+    position: absolute;
+    top: calc(100% + 175px); /* 이미지 하단 바로 위에 위치 */
+    left: 75%; /* 이미지 중앙에 위치 */
+}
+
+.custom-description-2 {
+    position: absolute;
+    top: calc(100% + 152px); /* 이미지 하단 바로 위에 위치 */
+    left: 30%; /* 이미지 중앙에 위치 */
+    font-size: 20px;
+
+}
+.custom-description-4 {
+    position: absolute;
+    top: calc(100% + 177px); /* 이미지 하단 바로 위에 위치 */
+    left: 30%; /* 이미지 중앙에 위치 */
+}
+.overlapping-image-yn {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 91%; /* 기존 이미지의 높이의 50% 위치에 고정 */
+    left: 70%; /* 왼쪽에서 70% 위치에 고정 */
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    z-index: 6;
+}
+.overlapping-image-bd {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 96%; /* 기존 이미지의 높이의 50% 위치에 고정 */
+    left: 30%; /* 왼쪽에서 70% 위치에 고정 */
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    z-index: 6;
+}
+.overlapping-image-bn {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 91%; /* 기존 이미지의 높이의 50% 위치에 고정 */
+    left: 30%; /* 왼쪽에서 70% 위치에 고정 */
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    z-index: 6;
+}
+.overlapping-image-yw {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 96%; /* 기존 이미지의 높이의 50% 위치에 고정 */
+    left: 70%; /* 왼쪽에서 70% 위치에 고정 */
+    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    z-index: 6;
+}
+}

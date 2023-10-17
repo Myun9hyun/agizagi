@@ -11,7 +11,7 @@ function Modal() {
     const getMinNumber = async () => {
       try {
         // 데이터를 조회하고 data 상태에 저장
-        const response = await axios.get('http://localhost:8080/api/numbers/min');
+        const response = await axios.get('http://43.201.175.42:8080/api/numbers/min');
         setData(response.data);
         
         // 모달 열기

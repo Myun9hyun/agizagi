@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
+import './mynumber.css'; // CSS 파일을 import
 
 function MyNumber() {
   const [nickname, setNickname] = useState('');
@@ -17,7 +18,7 @@ function MyNumber() {
 
   const searchNumber = () => {
     axios
-      .get(`http://localhost:8080/api/numbers/list`)
+      .get(`http://43.201.175.42:8080/api/numbers/list`)
       .then((response) => {
         const data = response.data;
         // Filter the data based on both nickname and passnumber
@@ -34,17 +35,34 @@ function MyNumber() {
   };
 
   return (
-    <div>
+    <div className="login-box">
       <h2>내 번호 조회</h2>
-      <div>
-        <label>닉네임:</label>
-        <input type="text" value={nickname} onChange={handleNicknameChange} />
+      <form>
+
+      <div className="user-box">
+        <input
+          type="text"
+          value={nickname}
+          onChange={handleNicknameChange}
+          className="input-field"
+          placeholder="닉네임을 입력하세요" // placeholder 추가
+        />
+        <label>닉네임</label>
+
       </div>
-      <div>
-        <label>개인번호:</label>
-        <input type="password" value={passnumber} onChange={handlePassnumberChange} />
+      <div className="user-box">
+        <input
+          type="password"
+          value={passnumber}
+          onChange={handlePassnumberChange}
+          className="input-field"
+          placeholder="개인번호를 입력하세요" // placeholder 추가
+        />
+        <label>개인번호</label>
+
       </div>
-      <button onClick={searchNumber}>조회</button>
+      <a onClick={searchNumber}>See My Number</a>
+      </form>
 
       {showAlert && (
         <div>
@@ -63,7 +81,7 @@ function MyNumber() {
         </div>
       ) : (
         <div>
-          <p>검색 결과가 없습니다.</p>
+          {/* <p>검색 결과가 없습니다.</p> */}
         </div>
       )}
     </div>

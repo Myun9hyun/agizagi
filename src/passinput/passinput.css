@@ -12,6 +12,7 @@
     width: 100%;
     position: relative;
     display: flex;
+    margin-top: -30%;
   }
   
   .searchTerm {
@@ -40,4 +41,25 @@
     cursor: pointer;
     font-size: 20px;
   }
-  
+/* 모바일 환경에서 스타일 변경 */
+@media screen and (max-width: 600px) {
+    .wrap {
+        width: 90%; /* 모바일 환경에서 너비를 더 크게 설정 */
+        top: 30%; /* 모바일 환경에서 수직 위치를 조정 */
+    }
+
+    .searchTerm {
+        width: 70%; /* 모바일 환경에서 검색창의 너비를 더 크게 설정 */
+        font-size: 16px; /* 모바일 환경에서 글꼴 크기 줄이기 */
+    }
+
+    .searchButton {
+        width: 20%; /* 모바일 환경에서 버튼 너비를 더 크게 설정 */
+        font-size: 18px; /* 모바일 환경에서 글꼴 크기 줄이기 */
+    }
+    .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+      }
+}

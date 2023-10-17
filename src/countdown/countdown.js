@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import moment from 'moment-timezone';
-import './countdown.css'; // CSS 파일을 import
-import Modal from '../modal/Modal'
-import ModalWhole from '../modal/Modalwhole'
-function Countdown() {
+import './countdown.css';
+import Footer from '../footer/footer';
+
+function Countdown({ onVaultOpen }) {
   const [remainingSeconds, setRemainingSeconds] = useState(0);
   const [isVaultOpen, setIsVaultOpen] = useState(false);
   const [vaultOpenTime, setVaultOpenTime] = useState('');
@@ -11,7 +11,7 @@ function Countdown() {
   const timerRef = useRef(null);
 
   const koreaTime = moment.tz('Asia/Seoul');
-  const targetTime = moment.tz('2023-09-16 01:26', 'Asia/Seoul');
+  const targetTime = moment.tz('2023-10-29 22:00', 'Asia/Seoul');
 
   const startCountdown = () => {
     const duration = moment.duration(targetTime.diff(koreaTime));
@@ -21,6 +21,7 @@ function Countdown() {
 
     if (totalSeconds === 0) {
       setIsVaultOpen(true);
+      onVaultOpen(); // 금고가 열리면 콜백 호출
     } else {
       timerRef.current = setInterval(() => {
         setRemainingSeconds((prevSeconds) => {
@@ -29,6 +30,7 @@ function Countdown() {
           } else {
             clearInterval(timerRef.current);
             setIsVaultOpen(true);
+            onVaultOpen(); // 금고가 열리면 콜백 호출
             return 0;
           }
         });
@@ -43,25 +45,25 @@ function Countdown() {
     return () => {
       clearInterval(timerRef.current);
     };
-  }, []);
+  }, [onVaultOpen]);
 
-  // ... (이전 코드 부분)
-
-return (
+  return (
     <div className="countdownHolder">
-      {isVaultOpen && <ModalWhole />}
-      {isVaultOpen && <Modal />}
+      {/* {!isVaultOpen && <ModalWhole />}
+      {!isVaultOpen && <Modal />} */}
 
       {!isVaultOpen && (
         <div>
-          <p>금고는 {vaultOpenTime} 에 열립니다!</p>
-         
+          <countp>금고는 {vaultOpenTime} 에 열립니다!</countp>
+          {/* <br/> */}
+          <p>남은 시간</p>
+
           {/* 여기에 나머지 카운트다운 요소들을 추가 */}
           <div className="position countDiv">
             <span className="digit">{Math.floor(remainingSeconds / 3600)}</span>
           </div>
           <div className="position countDiv">
-            <span className="digit">:</span>
+            <span className="digit">시</span>
           </div>
           <div className="position countDiv">
             <span className="digit">
@@ -69,16 +71,19 @@ return (
             </span>
           </div>
           <div className="position countDiv">
-            <span className="digit">:</span>
+            <span className="digit">분</span>
           </div>
           <div className="position countDiv">
             <span className="digit">{String(remainingSeconds % 60).padStart(2, '0')}</span>
           </div>
+          <div className="position countDiv">
+            <span className="digit">초</span>
+          </div>
         </div>
       )}
+      <Footer />
     </div>
   );
-  
 }
 
 export default Countdown;
