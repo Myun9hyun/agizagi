@@ -29,7 +29,6 @@ function NumberInput() {
       .then((response) => {
         console.log('Chance saved:', response.data);
         alert('기회가 저장되었습니다!');
-        // 저장 후 입력 필드 초기화 또는 다른 작업 수행
         setNickname('');
         setChance(0);
         setNumber('');

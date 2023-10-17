@@ -83,10 +83,10 @@
 }
 /* 링크 컨테이너 스타일 */
 .info-link-container {
-    position: absolute; /* 위치 조정을 위해 position: absolute 사용 */
-    bottom: 10px; /* 링크 컨테이너의 하단에 위치 (원하는 여백을 조절하세요) */
-    left: 10%; /* 왼쪽으로 10% 위치 (가운데 정렬을 위해 50%) */
-    transform: translateX(-50%); /* 가로 중앙 정렬을 위해 필요 (left 값의 절반) */
+    position: absolute;
+    bottom: 10px;
+    left: 10%; 
+    transform: translateX(-50%);
 }
 
 /* 링크 스타일 */
@@ -95,82 +95,81 @@
     text-decoration: none;
     color: transparent;
     font-weight: bold;
-    position: absolute; /* 위치 조정을 위해 position: absolute 사용 */
-    left: 5%; /* 왼쪽으로 10% 위치 (가운데 정렬을 위해 50%) */
-    top: 85%; /* 링크를 위로 10px 올립니다. */
+    position: absolute; 
+    left: 5%; 
+    top: 85%;
 }
 
-/* 대화그만하기 이미지 아이콘 스타일 (모바일 버전) */
 @media (max-width: 768px) {
     .info-image-icon {
-        width: 60%; /* 모바일 화면에서 아이콘 크기 변경 */
-        position: relative; /* 위치 조정을 위해 position: absolute 사용 */
-        left: 40%; /* 오른쪽으로 5% 위치 */
-        top: 85%; /* 링크를 위로 10px 올립니다. */
+        width: 60%;
+        position: relative;
+        left: 40%; 
+        top: 85%; 
     }
 
     .info-link {
-        display: none; /* 모바일 화면에서 링크 숨김 */
+        display: none; 
     }
     
     .info-text-container {
         font-size: 12px;
         width: 50%;
-        top: 40%; /* 모바일 화면에서 텍스트 위치 변경 */
+        top: 40%; 
         left: 55%;
-        padding: 5px; /* 모바일 화면에서 텍스트 패딩 조정 */
+        padding: 5px; 
     }
 
-    /* 텍스트 스타일 (모바일 버전) */
+    
     .info-title {
-        font-size: 14px; /* 모바일 화면에서 텍스트 크기 변경 */
+        font-size: 14px; 
     }
 
     .info-paragraph {
-        font-size: 12px; /* 모바일 화면에서 텍스트 크기 변경 */
+        font-size: 12px; 
     }
     .info-paragraph-1 {
-        font-size: 12px; /* 모바일 화면에서 텍스트 크기 변경 */
+        font-size: 12px; 
         color: blue;
     }
     .additional-image-bandi {
-        width: 20%; /* 모바일 화면에 맞게 이미지 크기를 조정합니다. */
-        height: auto; /* 모바일 화면에 맞게 이미지 크기를 조정합니다. */
-        position: absolute; /* 위치 조정을 위해 position: absolute 사용 */
-        left: 5%; /* 오른쪽으로 10% 위치 */
-        top: 10%; /* 이미지를 상단에 위치시킵니다. */
-        z-index: 1; /* 다른 요소 위에 표시하기 위해 z-index 설정 */
+        width: 20%; 
+        height: auto; 
+        position: absolute; 
+        left: 5%; 
+        top: 10%; 
+        z-index: 1; 
     }
     .additional-image-2 {
-        width: 6%; /* 원하는 크기로 조절 */
+        width: 6%; 
         height: auto;
         position: absolute;
-        top: 65%; /* 이미지를 상단에 위치시킵니다. */
-        left: 83%; /* 이미지를 왼쪽에 위치시킵니다. */
-        z-index: 1; /* 다른 요소 위에 표시하기 위해 z-index 설정 */
+        top: 65%; 
+        left: 83%; 
+        z-index: 1; 
     }
     .additional-image-3 {
-        width: 5.7%; /* 원하는 크기로 조절 */
+        width: 5.7%; 
         height: auto;
         position: absolute;
-        top: 65%; /* 이미지를 상단에 위치시킵니다. */
-        left: 90%; /* 이미지를 왼쪽에 위치시킵니다. */
-        z-index: 1; /* 다른 요소 위에 표시하기 위해 z-index 설정 */
+        top: 65%; 
+        left: 90%; 
+        z-index: 1; 
     }
     .additional-image-4 {
-        width: 15%; /* 원하는 크기로 조절 */
+        width: 15%; 
         height: auto;
         position: absolute;
-        top: 84%; /* 이미지를 상단에 위치시킵니다. */
-        left: 2%; /* 이미지를 왼쪽에 위치시킵니다. */
-        z-index: 1; /* 다른 요소 위에 표시하기 위해 z-index 설정 */
+        top: 84%; 
+        left: 2%; 
+        z-index: 1; 
     }
     .additional-image-bandiname {
-        width: 20%; /* 모바일 화면에 맞게 이미지 크기를 조정합니다. */
-        height: auto; /* 모바일 화면에 맞게 이미지 크기를 조정합니다. */
-        position: absolute; /* 위치 조정을 위해 position: absolute 사용 */
-        left: 6%; /* 오른쪽으로 10% 위치 */
-        top: 63%; /* 이미지를 상단에 위치시킵니다. */
-        z-index: 1; /* 다른 요소 위에 표시하기 위해 z-index 설정 */
+        width: 20%; 
+        height: auto; 
+        position: absolute; 
+        left: 6%; 
+        top: 63%; 
+        z-index: 1; 
     }
 }

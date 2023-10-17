@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './passinput.css'; // passinput.css 파일을 import
+import './passinput.css';
 
 function PassInput({ onPasswordCheck }) {
   const [password, setPassword] = useState('');

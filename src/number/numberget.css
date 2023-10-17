@@ -1,4 +1,4 @@
-/* Custom Image 1 스타일 */
+
 .custom-image-1 {
     width: 4%;
     height: auto;
@@ -7,7 +7,7 @@
     left: 75%;
     margin: 0 auto;
     cursor: pointer;
-    transform: translate(-50%, -50%); /* 이미지의 중앙 정렬을 위해 사용 */
+    transform: translate(-50%, -50%);
     z-index: 5;
 }
 .image-style-1 {
@@ -18,14 +18,14 @@
     position: relative;
 }
 .image-overlay {
-    position: absolute; /* 이미지 컨테이너 내부 요소의 위치를 조정하기 위해 절대 위치 지정 */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
 }
 .image-group-2 {
-    position: absolute; /* 이미지 컨테이너 내부 요소의 위치를 조정하기 위해 절대 위치 지정 */
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0;
@@ -36,9 +36,9 @@
     font-size: 1.5vw;
     background-color: black;
     position: absolute;
-    top: 91%; /* 이미지 하단 바로 위에 위치 */
-    left: 70%; /* 이미지 중앙에 위치 */
-    transform: translateX(-50%); /* 가운데 정렬을 위한 위치 조정 */
+    top: 91%; 
+    left: 70%; 
+    transform: translateX(-50%); 
     z-index: 6;
 }
 .image-description-whole {

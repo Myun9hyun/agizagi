@@ -21,7 +21,6 @@ function MyNumber() {
       .get(`http://43.201.175.42:8080/api/numbers/list`)
       .then((response) => {
         const data = response.data;
-        // Filter the data based on both nickname and passnumber
         const filteredData = data.filter(
           (item) => item.nickname === nickname && item.passnumber.toString() === passnumber
         );
@@ -81,7 +80,6 @@ function MyNumber() {
         </div>
       ) : (
         <div>
-          {/* <p>검색 결과가 없습니다.</p> */}
         </div>
       )}
     </div>

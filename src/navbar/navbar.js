@@ -5,7 +5,7 @@ import NumberGet from '../number/numberget';
 import NumberInput from '../number/numberinput';
 import Chance from '../chance/chance';
 import './navbar.css';
-import PassInput from '../passinput/passinput'; // PassInput 컴포넌트를 import
+import PassInput from '../passinput/passinput';
 import MyNumber from '../mynumber/mynumber'
 import Info from '../Info/info';
 import Info2 from '../Info/info2';

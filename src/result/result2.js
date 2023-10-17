@@ -23,21 +23,13 @@ function Result2() {
 
   return (
     <div className="info-container">
-      {/* 이미지와 텍스트 컨테이너 */}
       <div className="info-content">
-        {/* 이미지 */}
-        {/* <Link to="/"> */}
           <img
             src="https://i.imgur.com/QNIaPn1.png"
             alt="퀘스트창"
-            className="info-image" // result.css에서 정의한 클래스를 적용
+            className="info-image"
           />
-        {/* </Link> */}
-        
-        {/* 이미지 내부 텍스트 */}
         <div className="info-text-container">
-          {/* 텍스트 내용 */}
-          {/* <h1 className="info-title">금고 당첨자는 다음과 같아!</h1> */}
           <p className="info-paragraph">
             {data ? (
               // 데이터가 있을 경우 데이터를 표시
@@ -48,12 +40,8 @@ function Result2() {
               // 데이터가 없을 경우 로딩 메시지 표시
               <span>데이터를 불러오는 중입니다...</span>
             )}
-          </p> {/* result.css에서 정의한 클래스를 적용 */}
+          </p>
         </div>
-
-      
-
-        {/* 추가 이미지 */}
         <div className="additional-image-container">
           <img
             src="https://i.imgur.com/NAxvxQA.png"
@@ -65,7 +53,7 @@ function Result2() {
             alt="반디스크립트"
             className="additional-image-bandiname"
           />
-        <Link to="/result"> {/* 다음 이미지 클릭 시 /info2로 이동 */}
+        <Link to="/result">
           <img
             src="https://i.imgur.com/o3zxrEN.png"
             alt="이전"
@@ -79,7 +67,7 @@ function Result2() {
                 className="additional-image-3"
             />
           </Link>
-          <Link to="/get"> {/* 다음 이미지 클릭 시 /info2로 이동 */}
+          <Link to="/get">
             <img
                 src="https://i.imgur.com/uXGxKqq.png"
                 alt="대화그만하기"
@@ -88,9 +76,6 @@ function Result2() {
             </Link>
         </div>
       </div>
-
-      {/* 홈으로 이동하는 링크 (바깥에 위치) */}
-      {/* <Link to="/" className="info-link">홈으로 이동</Link> */}
     </div>
   );
 }

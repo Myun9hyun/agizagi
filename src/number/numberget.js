@@ -10,13 +10,13 @@ function NumberGet() {
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isModalWholeOpen, setIsModalWholeOpen] = useState(false);
-  const [isVaultOpen, setIsVaultOpen] = useState(false); // 추가: 금고 열림 상태
+  const [isVaultOpen, setIsVaultOpen] = useState(false);
 
   useEffect(() => {
     if (isPasswordCorrect && isVaultOpen) {
       setIsModalWholeOpen(true);
     }
-  }, [isPasswordCorrect, isVaultOpen]); // 수정: isVaultOpen을 의존성 배열에 추가
+  }, [isPasswordCorrect, isVaultOpen]);
 
   const handlePasswordCheck = (password) => {
     if (password === '970808') {
@@ -29,7 +29,6 @@ function NumberGet() {
   return (
     <div className="claw-machine-container">
       <div className="image-container">
-        {/* 1번 이미지 */}
         <div style={{ display: isPasswordCorrect || isVaultOpen ? 'block' : 'none' }}>
           <div className="image-overlay">
             <Link to="/result">
@@ -57,8 +56,6 @@ function NumberGet() {
               alt="금고결과보기엔피시"
               className="overlapping-image-bd"
             />
-            {/* <p className="image-description-b">아기자기</p>
-            <p className="image-description-data">금고결과보기</p> */}
           </div>
         </div>
         {/* 2번 이미지 */}
@@ -90,8 +87,6 @@ function NumberGet() {
               alt="전체결과보기엔피시"
               className="overlapping-image-yw"
             />
-            {/* <p className="image-description-y">영래곰</p>
-            <p className="image-description-whole">전체데이터보기</p> */}
           </div>
         </div>
       </div>
@@ -102,7 +97,7 @@ function NumberGet() {
       {!isPasswordCorrect && (
         <Countdown
           onVaultOpen={() => {
-            setIsVaultOpen(true); // 추가: 금고 열림 상태 업데이트
+            setIsVaultOpen(true);
           }}
         />
       )}
