@@ -6,18 +6,16 @@ function Info() {
   return (
     <div className="info-container">
       <div className="info-content">
-        <img
-          src="https://i.imgur.com/QNIaPn1.png"
-          alt="퀘스트창"
-          className="info-image"
-        />
-        <div className="info-text-container">
+          <img
+            src="https://i.imgur.com/QNIaPn1.png"
+            alt="퀘스트창"
+            className="info-image"
+          />
+        <div className="info-text-container"> 
           <p className="info-paragraph">
-            혹시나 버그가 있다면 다음의 링크를 눌러서 꼭 제보 부탁해!{" "}
-            {/* "둥둥향에게 연락하기"를 클릭하여 www.naver.com으로 이동 */}
-            <Link to="https://open.kakao.com/o/sl6WBJUc" target="_blank">
-              둥둥향에게 연락하기
-            </Link>
+            앞으로도 기부해주는 코어젬스톤은 이 금고 이벤트와 같이 길드의 이벤트를 위해 활용할게!
+            다시 한 번 간부진들 모두 기부해준 아깅이들에게 고맙다는 말을 전하고 싶어!    
+
           </p>
         </div>
         <div className="additional-image-container">
@@ -31,21 +29,28 @@ function Info() {
             alt="둥둥향스크립트"
             className="additional-image-dn"
           />
-          <Link to="/comment">
-            <img
-              src="https://i.imgur.com/o3zxrEN.png"
-              alt="이전"
-              className="additional-image-2"
-            />
-          </Link>
+        <Link to="/comment2">
+          <img
+            src="https://i.imgur.com/o3zxrEN.png"
+            alt="이전"
+            className="additional-image-2"
+          />
+        </Link>
 
-          <Link to="/">
+          <Link to="/comment4">
             <img
-              src="https://i.imgur.com/uXGxKqq.png"
-              alt="대화그만하기"
-              className="additional-image-4"
+                src="https://i.imgur.com/8RJpXyn.png"
+                alt="다음"
+                className="additional-image-3"
             />
-          </Link>
+            </Link>
+            <Link to="/">
+            <img
+                src="https://i.imgur.com/uXGxKqq.png"
+                alt="대화그만하기"
+                className="additional-image-4"
+            />
+            </Link>
         </div>
       </div>
     </div>

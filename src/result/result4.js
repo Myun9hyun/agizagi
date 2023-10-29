@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './comment.css';
+import './result.css';
 
-function Info() {
+function Result() {
   return (
     <div className="info-container">
       <div className="info-content">
@@ -11,38 +11,31 @@ function Info() {
             alt="퀘스트창"
             className="info-image"
           />
-        <div className="info-text-container"> 
+        <div className="info-text-container">
           <p className="info-paragraph">
-            금고 이벤트는 위클리 기부자들의 '코어젬스톤'을 판매 한 메소로 운영되고 있어
-          </p>
+          당첨자 및 참가상을 받은 아깅이들은 10월30일(월)에 택배로 보상을 일괄 지급할게!
+당첨자 택배함이 가득차서 보상 수령이 불가능한 경우에는 그 다음 낮은 숫자를 쓴 아깅이가 당첨자가 될거야.
+그러니까 꼭! 잊지말고 택배함 비워두도록해!          </p>
         </div>
         <div className="additional-image-container">
           <img
-            src="https://i.imgur.com/yq4qMwz.png"
-            alt="둥둥향"
-            className="additional-image-d"
+            src="https://i.imgur.com/NAxvxQA.png"
+            alt="반디"
+            className="additional-image-bandi"
           />
-           <img
-            src="https://i.imgur.com/sYToTyk.png"
-            alt="둥둥향스크립트"
-            className="additional-image-dn"
+          <img
+            src="https://i.imgur.com/nWfHbAt.png"
+            alt="반디스크립트"
+            className="additional-image-bandiname"
           />
-        <Link to="/comment">
+          <Link to="/result3">
           <img
             src="https://i.imgur.com/o3zxrEN.png"
             alt="이전"
             className="additional-image-2"
           />
         </Link>
-
-          <Link to="/comment3">
-            <img
-                src="https://i.imgur.com/8RJpXyn.png"
-                alt="다음"
-                className="additional-image-3"
-            />
-            </Link>
-            <Link to="/">
+            <Link to="/get">
             <img
                 src="https://i.imgur.com/uXGxKqq.png"
                 alt="대화그만하기"
@@ -55,4 +48,4 @@ function Info() {
   );
 }
 
-export default Info;
+export default Result;

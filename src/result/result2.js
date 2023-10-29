@@ -33,9 +33,8 @@ function Result2() {
           <p className="info-paragraph">
             {data ? (
               // 데이터가 있을 경우 데이터를 표시
-              <span>'{data.nickname}'님의 숫자 '{data.number}'가 당첨되었어!
-              정말 축하해!
-              당첨 상품은 솔에르다조각 30개야</span>
+              <span>당첨자는 '{data.nickname}'야! 정말 축하해! <br/>'{data.nickname}'는 가장 낮은 숫자인 '{data.number}' 를 작성했어!<br/>
+              당첨자 상품은 솔에르다조각 30개야</span>
             ) : (
               // 데이터가 없을 경우 로딩 메시지 표시
               <span>데이터를 불러오는 중입니다...</span>

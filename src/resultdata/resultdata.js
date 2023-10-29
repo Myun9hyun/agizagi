@@ -13,7 +13,7 @@ function ResultData() {
             className="info-image"
           />
         <div className="info-text-container"> 
-          <h1 className="info-title">금고 전체 데이터입니다!</h1> 
+          <h1 className="info-title">금고 전체 데이터가 궁금해?</h1> 
           <p className="info-paragraph">
             금고 데이터는 다음 버튼을 누르면 보여줄게
             </p> 

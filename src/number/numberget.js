@@ -60,7 +60,7 @@ function NumberGet() {
         </div>
         {/* 2번 이미지 */}
         <div style={{ display: isPasswordCorrect || isVaultOpen ? 'block' : 'none' }}>
-          <img src="https://i.imgur.com/mC722y9.png" alt="클로 머신" className="image-style-1" />
+          <img src="https://i.imgur.com/5aYU3Y9.png" alt="클로 머신" className="image-style-1" />
 
           <div className="image-group-2">
             <Link to="/resultdata">
@@ -72,7 +72,7 @@ function NumberGet() {
               />
             </Link>
             <img
-              src="https://i.imgur.com/hPjWbAr.png"
+              src="https://i.imgur.com/YNgyE2h.png"
               alt="영래"
               className="custom-image-4"
               onClick={() => setIsModalWholeOpen(true)}

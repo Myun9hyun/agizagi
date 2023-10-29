@@ -17,8 +17,8 @@ function NumberInput() {
   const handleNumberChange = (e) => {
     // 입력된 값이 1 이상인지 확인
     const newNumber = e.target.value;
-    if (newNumber !== '' && newNumber < 1) {
-      alert('숫자는 1 이상의 수를 입력해주세요!');
+    if (newNumber !== '' && newNumber < 1 || newNumber > 1000) {
+      alert('숫자는 1 이상, 1000 이하의 수를 입력해주세요!');
     } else {
       setNumber(newNumber);
     }
@@ -100,7 +100,7 @@ function NumberInput() {
         <div className="user-box">
           <input
             type="number"
-            placeholder="원하는 숫자를 입력하세요"
+            placeholder="원하는 숫자를 입력하세요 (1~1000)"
             value={number}
             onChange={handleNumberChange}
           />

@@ -71,6 +71,13 @@ function Result3() {
                 className="additional-image-2"
               />
             </Link>
+            <Link to="/result4"> 
+            <img
+                src="https://i.imgur.com/8RJpXyn.png"
+                alt="다음"
+                className="additional-image-3"
+            />
+          </Link>
             <Link to="/get">
               <img
                 src="https://i.imgur.com/uXGxKqq.png"

@@ -14,7 +14,7 @@ function Info() {
         <div className="info-text-container"> 
           <h1 className="info-title">아기자기 금고에 온것을 환영해!</h1> 
           <p className="info-paragraph">
-            아기자기 금고의 사용법을 알려줄게.
+            아기자기 금고의 사용법을 알려줄게
           </p> 
         </div>
         <div className="additional-image-container">

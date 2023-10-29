@@ -13,7 +13,9 @@ function Info() {
           />
         <div className="info-text-container">
           <p className="info-paragraph">
-            안녕! 아기자기 금고에 온걸 환영해! 나는 둥둥향이야. 이 금고 페이지를 만들었지
+            안녕! 아기자기 금고에 온걸 환영해! 나는 둥둥향이야. 이 금고 페이지를 만들었지.
+            아깅이들을 위해 열심히 만들어보았어! 부족하지만 재미있게 즐겨보길 바래!
+
           </p>
         </div>
         <div className="additional-image-container">

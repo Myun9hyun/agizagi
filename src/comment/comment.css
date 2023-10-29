@@ -8,8 +8,8 @@
     width: 8%; /* 원하는 크기로 조절 */
     height: auto;
     position: absolute;
-    top: 18%; /* 이미지를 상단에 위치시킵니다. */
-    left: 22%; /* 이미지를 왼쪽에 위치시킵니다. */
+    top: 19%; /* 이미지를 상단에 위치시킵니다. */
+    left: 22.3%; /* 이미지를 왼쪽에 위치시킵니다. */
     z-index: 1; /* 다른 요소 위에 표시하기 위해 z-index 설정 */
 }
 .additional-image-dn {

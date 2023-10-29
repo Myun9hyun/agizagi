@@ -18,11 +18,13 @@ import Info8 from '../Info/info8';
 import Result from '../result/result';
 import Result2 from '../result/result2';
 import Result3 from '../result/result3';
+import Result4 from '../result/result4';
 import ResultData  from '../resultdata/resultdata';
 import ResultData2  from '../resultdata/resultdata2';
 import Comment from '../comment/comment'
 import Comment2 from '../comment/comment2'
 import Comment3 from '../comment/comment3'
+import Comment4 from '../comment/comment4'
 
 function Navbar() {
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
@@ -74,11 +76,14 @@ function Navbar() {
           <Route path="/result" element={<Result />} />
           <Route path="/result2" element={<Result2 />} />
           <Route path="/result3" element={<Result3 />} />
+          <Route path="/result4" element={<Result4 />} />
           <Route path="/resultdata" element={<ResultData />} />
           <Route path="/resultdata2" element={<ResultData2 />} />
           <Route path="/comment" element={<Comment />} />
           <Route path="/comment2" element={<Comment2 />} />
           <Route path="/comment3" element={<Comment3 />} />
+          <Route path="/comment4" element={<Comment4 />} />
+
 
 
           {isPasswordCorrect ? (

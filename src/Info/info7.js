@@ -14,7 +14,7 @@ function Info() {
         <div className="info-text-container">
           <h1 className="info-title"></h1>
           <p className="info-paragraph">
-            마찬가지로 '기회부여' 탭도 간부진들만 접근할 수 있으니 우리 아깅이들은 접근 할 필요가 없어!
+          마찬가지로 '기회부여' 탭도 간부진들만 접근할 수 있으니 우리 아깅이들은 접근 할 수 없어! 
           </p>
         </div>
         <div className="additional-image-container">

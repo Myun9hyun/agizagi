@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-section1">
         {/* <Link to="/team" className="button-link"> */}
-        ver 4.6.&copy; 둥둥향 <br/>Poster designed by 릎샴<br/>
+        ver 5.1.&copy; 둥둥향 <br/>Poster designed by 릎샴<br/>
         
         {/* </Link>   */}
       </div>

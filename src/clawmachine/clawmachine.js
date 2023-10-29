@@ -19,7 +19,7 @@ function App() {
           </Link>
           <div className="overlapping-image-2-container">
             <img
-              src="https://i.imgur.com/CKan8Br.png"
+              src="https://i.imgur.com/jtqFLeg.png"
               alt="샴푸"
               className="overlapping-image-2"
             />
@@ -45,7 +45,7 @@ function App() {
           </Link>
           <div className="overlapping-image-2-container">
             <img
-              src="https://i.imgur.com/lI2LBj2.png"
+              src="https://i.imgur.com/OfGg1cr.png"
               alt="둥둥향"
               className="overlapping-image-4"
             />
