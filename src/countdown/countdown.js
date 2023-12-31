@@ -11,7 +11,7 @@ function Countdown({ onVaultOpen }) {
   const timerRef = useRef(null);
 
   const koreaTime = moment.tz('Asia/Seoul');
-  const targetTime = moment.tz('2023-10-29 22:00', 'Asia/Seoul');
+  const targetTime = moment.tz('2023-12-31 22:00', 'Asia/Seoul');
 
   const startCountdown = () => {
     const duration = moment.duration(targetTime.diff(koreaTime));

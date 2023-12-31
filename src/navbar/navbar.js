@@ -15,6 +15,7 @@ import Info5 from '../Info/info5';
 import Info6 from '../Info/info6';
 import Info7 from '../Info/info7';
 import Info8 from '../Info/info8';
+import Info9 from '../Info/info9';
 import Result from '../result/result';
 import Result2 from '../result/result2';
 import Result3 from '../result/result3';
@@ -25,6 +26,7 @@ import Comment from '../comment/comment'
 import Comment2 from '../comment/comment2'
 import Comment3 from '../comment/comment3'
 import Comment4 from '../comment/comment4'
+import Bird from '../bird/bird'
 
 function Navbar() {
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
@@ -73,6 +75,7 @@ function Navbar() {
           <Route path="/info6" element={<Info6 />} />
           <Route path="/info7" element={<Info7 />} />
           <Route path="/info8" element={<Info8 />} />
+          <Route path="/info9" element={<Info9 />} />
           <Route path="/result" element={<Result />} />
           <Route path="/result2" element={<Result2 />} />
           <Route path="/result3" element={<Result3 />} />
@@ -83,6 +86,7 @@ function Navbar() {
           <Route path="/comment2" element={<Comment2 />} />
           <Route path="/comment3" element={<Comment3 />} />
           <Route path="/comment4" element={<Comment4 />} />
+          <Route path="/bird" element={<Bird />} />
 
 
 

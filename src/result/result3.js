@@ -16,7 +16,7 @@ function Result3() {
           setPrizeWinners(data);
         } catch (error) {
           console.error('Error fetching data:', error);
-          setErrorText("아직 당첨 추첨 시간이 아닙니다! 참가상 추첨은 10/29(일) 22:00에 진행됩니다"); // 에러 메시지 설정
+          setErrorText("아직 당첨 추첨 시간이 아닙니다! 참가상 추첨은 12/31(일) 22:00에 진행됩니다"); // 에러 메시지 설정
         }
       };
   

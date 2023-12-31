@@ -94,7 +94,7 @@ function ResultData() {
             alt="영래스크립트"
             className="additional-image-youngname"
           />
-          <Link to="/get"> {/* 다음 이미지 클릭 시 /info2로 이동 */}
+          <Link to="/get"> 
             <img
                 src="https://i.imgur.com/uXGxKqq.png"
                 alt="대화그만하기"
